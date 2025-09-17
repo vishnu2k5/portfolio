@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { Link, Element, Events, scrollSpy } from "react-scroll";
 import { useEffect , useState,useRef } from "react";
 import Home from "./Home";
-import About from "./About";
+import Projects from "./projects";
 
 const Navbar = () => {
   return (
@@ -23,8 +23,9 @@ const Navbar = () => {
         >
           Home
         </Link>
+      
         <Link
-          to="about"
+          to="projects"
           smooth={true}
           spy={true}
           offset={-70} // adjust for navbar height
@@ -32,7 +33,7 @@ const Navbar = () => {
           activeClass="text-blue-600 font-bold"
           className="Link"
         >
-          About
+          Projects
         </Link>
         <Link
           to="contact"
@@ -54,9 +55,9 @@ const Navbar = () => {
     </div>
     <div>
     <Element
-      name="about"
+      name="projects"
     >
-      <About />
+      <Projects />
     </Element>
     </div>
     </>
