@@ -2,8 +2,9 @@ import React from 'react'
 import './Navbar.css'
 const Navbar = () => {
   return (
-    <div>
-      <ul className='navbar'>
+    <div className='navbar'>
+        <img src="logo.png" alt="Logo" />
+      <ul >
         <li>home</li>
         <li>about</li>
         <li>contact</li>
