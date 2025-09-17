@@ -1,0 +1,23 @@
+.navbar {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    margin-left: 40%;
+    
+}
+div{
+    background: blueviolet;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 0px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    background: #2a2929;
+}
