@@ -33,7 +33,7 @@ const About = () => {
           <div className="about-links">
             <a href="https://github.com/vishnu2k5" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://www.linkedin.com/in/manchuru-vishnuvardhan-38009025a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="/Vishnu_dev.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn">View Resume</a>
+            <a href="https://drive.google.com/file/d/1a-Cgo34IMK1uSwpFHmsagGPVF3QERJpK/view" target="_blank" rel="noopener noreferrer" className="resume-btn">View Resume</a>
           </div>
         </div>
 
