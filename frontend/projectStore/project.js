@@ -1,0 +1,10 @@
+import { create } from 'zustand';
+
+export const useProjectStore = create((set) => ({
+    projects: [
+        { id: 1, name: 'Project 1', description: 'Description for Project 1' },
+        { id: 2, name: 'Project 2', description: 'Description for Project 2' },
+        { id: 3, name: 'Project 3', description: 'Description for Project 3' },
+    ],
+    addProject: (project) => set((state) => ({ projects: [...state.projects, project] })),
+}));
