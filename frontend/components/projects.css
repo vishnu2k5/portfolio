@@ -10,27 +10,34 @@
 
 .projects-title {
   font-size: 2.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
   border-bottom: 2px solid #1B1B1B;
   padding-bottom: 10px;
+  width: fit-content;
 }
 
+/* Grid layout for cards */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   width: 100%;
   max-width: 1200px;
 }
 
+/* Project Card Style */
 .project-card {
-  background-color: #121212;
+  background-color: #1B1B1B;
   border-radius: 15px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: none;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -38,17 +45,24 @@
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
 }
 
+/* Image section */
 .project-image {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  background-color: #121212; /* prevents white space */
-  display: block; /* removes inline gaps */
+  background-color: #121212;
+  display: block;
   border: none;
+  border-radius: 0;
 }
 
+/* Content section */
 .project-content {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .project-title {
@@ -63,20 +77,52 @@
   margin-bottom: 15px;
 }
 
-.project-btn {
-  background-color: #ffffff;
-  color: #000000;
-  text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  display: inline-block;
+/* Button styling */
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
 }
 
-.project-btn:hover {
+.project-btn {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* GitHub button */
+.github-btn {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.github-btn:hover {
   background-color: #cccccc;
 }
+
+/* Live Demo button */
+.live-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.live-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 50px 20px;
+  }
+  .projects-grid {
+    gap: 20px;
+  }
+}
+
 
 /* Remove white flash during image loading */
 .project-image::before {
@@ -98,4 +144,10 @@
   .project-card {
     margin-bottom: 20px;
   }
+}
+
+.ongoing-title {
+  margin-top: 80px;
+  color: #66b3ff;
+  border-bottom: 2px solid #007bff;
 }
