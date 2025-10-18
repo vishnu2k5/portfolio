@@ -44,7 +44,7 @@ export const useProjectStore = create((set) => ({
       description:
         'A modern, fully responsive developer portfolio built with React and Vite. Features sections for About, Projects, and Contact with smooth scrolling and aesthetic dark-mode design.',
       live:
-        'https://portfolio-828zr16ve-mvishnuvardhan156-gmailcoms-projects.vercel.app/',
+        'https://portfolio-jhsc-h8aguez01-mvishnuvardhan156-gmailcoms-projects.vercel.app/',
     },
   ],
 }));
