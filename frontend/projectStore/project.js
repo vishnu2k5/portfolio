@@ -46,5 +46,6 @@ export const useProjectStore = create((set) => ({
       live:
         'https://portfolio-jhsc-h8aguez01-mvishnuvardhan156-gmailcoms-projects.vercel.app/',
     },
+    
   ],
 }));
