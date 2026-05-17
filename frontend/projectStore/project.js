@@ -46,6 +46,15 @@ export const useProjectStore = create((set) => ({
       live:
         'https://portfolio-jhsc-h8aguez01-mvishnuvardhan156-gmailcoms-projects.vercel.app/',
     },
-    
+    {
+      id: 6,
+      name: 'Self-Healing Infrastructure MonitorSelf-Healing Infrastructure Monitor',
+      github: 'https://github.com/vishnu2k5/self-Healing-Service-Monitor.git',
+      image: 'https://res.cloudinary.com/dtujitvpy/image/upload/v1779002149/Screenshot_2026-05-17_124403_jbbq4y.png',
+      description:
+        'A lightweight DevOps monitoring and self-healing tool built with Bash that automatically detects failures in services, containers, processes, and HTTP endpoints and attempts to recover them This project demonstrates core Site Reliability Engineering (SRE) concepts such as monitoring, automated recovery, configuration-driven infrastructure, and logging',
+      live:
+        'https://portfolio-jhsc-h8aguez01-mvishnuvardhan156-gmailcoms-projects.vercel.app/',
+    },
   ],
 }));
